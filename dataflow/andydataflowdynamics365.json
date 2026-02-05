@@ -1,0 +1,55 @@
+{
+	"name": "andydataflowdynamics365",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ADLSgen2",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DynamicsEntity1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          STATUSCODE as string,",
+				"          STATECODE as string,",
+				"          VM_CDMCREATEDON as string,",
+				"          VM_CDMMODIFIEDON as string,",
+				"          VM_CUSTOMERIDTYPE as string,",
+				"          DAN as string,",
+				"          SOURCESYSTEM as string,",
+				"          SOURCESYSTEMCODE as string,",
+				"          VM_SOURCERECORDCREATEDDATE as string,",
+				"          VM_NAME as string,",
+				"          RCRD_CRT_DT as string,",
+				"          RCRD_UDT_DT as string,",
+				"          RCRD_END_DT as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source1 sink(allowSchemaDrift: true,",
+				"     validateSchema: true,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}

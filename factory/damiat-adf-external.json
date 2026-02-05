@@ -1,0 +1,15 @@
+{
+	"name": "damiat-adf-external",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "92b32d7c-316f-43af-b64d-c3869eca176d",
+		"tenantId": "6bf9d2bb-d35f-4e14-909d-61916a43db1e",
+		"userAssignedIdentities": {
+			"/subscriptions/efbf0245-e943-49a6-ba51-3ee1c8b8cef9/resourcegroups/damiat-rg-eastus/providers/Microsoft.ManagedIdentity/userAssignedIdentities/adf-dynamics-uami": {
+				"clientId": "3c157df5-65e3-4f8e-ba15-1a63952bc6bc",
+				"principalId": "002cfaf6-d55f-4fa5-ae73-85a024e0a2e7"
+			}
+		}
+	}
+}

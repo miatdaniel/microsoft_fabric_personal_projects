@@ -1,0 +1,18 @@
+{
+	"name": "AzureDatabricks1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2841544553186556.16.azuredatabricks.net",
+			"newClusterNodeType": "Standard_DS3_v2",
+			"newClusterNumOfWorker": "1",
+			"newClusterVersion": "17.3.x-photon-scala2.13",
+			"newClusterLogDestination": "/Volumes/damiat_databricks_unitycatalog/default/ammar_test/1211-094049-582wk487",
+			"clusterOption": "Fixed",
+			"newClusterInitScripts": [],
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM4MEYxRjFFLTc0MjItNDcxNS1BRTlFLTI0ODlDMDA1MDdBMV9lNDRhMzNkNS0wZTQ3LTQ1NmItYmUwYS04ZGM5MGVhM2Y2ZjAiDQp9"
+		}
+	}
+}
